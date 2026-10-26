@@ -1,0 +1,29 @@
+SITTU AI — CHROME BROWSER VERSION (ENHANCED)
+
+Yahi Chrome mein khulne wala Sittu AI hai — native desktop app nahi.
+Features: Hindi/Hinglish/English answers, longer explanations, Python/BCA learning help, per-question YES/NO permission, browser voice read-aloud, microphone input (Chrome support par), local chat history/export, and best-effort live web search.
+
+IMPORTANT: Real detailed AI answers ke liye free local Ollama install hona chahiye. Is app ka default model qwen2.5:3b hai. Model download several GB ka ho sakta hai; internet aur disk space chahiye.
+
+WINDOWS SETUP (one time):
+1. Install Python 3.10+ from the official Python website if missing.
+2. Install Ollama from https://ollama.com and start it.
+3. Open Command Prompt and run: ollama pull qwen2.5:3b
+   Wait until download finishes. This is a large download.
+4. Extract this ZIP to a normal folder or USB drive.
+5. Double-click RUN_SITTU_AI_WINDOWS.bat. Chrome/browser should open at http://127.0.0.1:8765.
+6. Ask a question. First response may take time while the model loads.
+
+IF YOU DO NOT INSTALL OLLAMA:
+The Chrome UI still opens and may show web search snippets, but it cannot generate full AI answers without a running AI model or configured paid API. This limitation is unavoidable; no honest app can provide unlimited high-quality AI answers for free with no AI service/model.
+
+MAC/LINUX: Install Python and Ollama, run `ollama pull qwen2.5:3b`, then `python3 server.py`; open http://127.0.0.1:8765.
+
+VOICE: Uses browser speech synthesis. In Chrome, voice quality and Hindi/English voices depend on the operating system and installed voices; a particular sweet/male voice cannot be guaranteed on every device.
+
+PRIVACY/SAFETY NOTES:
+- Server listens only on 127.0.0.1 on this computer.
+- YES/NO prompt is a local permission prompt, not actual remote owner approval.
+- Chat history is saved in this browser's local storage. Do not put private family details in a public/shared computer.
+- Web search may be blocked/rate-limited and should be checked by opening the cited source links.
+- This is a browser-based local starter, not an Android APK, Play Store app, or standalone EXE.
